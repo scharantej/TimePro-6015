@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<title>Smart Time</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+<h1>Smart Time</h1>
+<h2>Your Schedule</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Task</th>
+</tr>
+</thead>
+<tbody>
+{% for event in calendar %}
+<tr>
+<td>{{ event.time }}</td>
+<td>{{ event.task }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+
+</html>
+
